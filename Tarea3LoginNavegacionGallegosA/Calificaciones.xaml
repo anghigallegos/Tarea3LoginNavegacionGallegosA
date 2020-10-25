@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea3LoginNavegacionGallegosA.Calificaciones">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUser">
+            </Label>
+            
+            <Label Text="CALIFICACIONES"
+                   BackgroundColor="RoyalBlue"
+                   HorizontalTextAlignment="Center"
+                   FontSize="22" 
+                   TextColor="White"
+                   HorizontalOptions="CenterAndExpand">
+            </Label>
+
+            <Entry x:Name="txtNota1"
+                BackgroundColor="LightBlue"
+				Placeholder="Ingrese la Nota de Seguimiento 1"
+                Keyboard="Numeric">
+            </Entry>
+
+            <Entry x:Name="txtExamen1"
+                BackgroundColor="LightBlue"
+				Placeholder="Ingrese la nota del Examen1"
+                Keyboard="Numeric">
+            </Entry>
+
+            <Entry x:Name="txtNota2"
+                BackgroundColor="CadetBlue"
+				Placeholder="Ingrese la Nota de Seguimiento 2"
+                Keyboard="Numeric">
+            </Entry>
+
+            <Entry x:Name="txtExamen2"
+                BackgroundColor="CadetBlue"
+				Placeholder="Ingrese la nota del Examen2"
+                Keyboard="Numeric">
+            </Entry>
+
+            <Entry x:Name="txtResultado1" 
+                IsReadOnly="True"
+                BackgroundColor="LightBlue"
+				Placeholder="Resultado Nota Parcial 1">
+            </Entry>
+
+            <Entry x:Name="txtResultado2" 
+                BackgroundColor="CadetBlue"
+                IsReadOnly="True"
+				Placeholder="Resultado Nota Parcial 2">
+            </Entry>
+
+            <Entry x:Name="txtResultadoFinal" 
+                BackgroundColor="CornflowerBlue"
+                IsReadOnly="True"
+				Placeholder="Resultado Nota Final">
+            </Entry>
+
+            <Label x:Name="txtmensaje"></Label>
+
+            <Button x:Name="btnCalcular"
+                    Text="Calcular"
+                    Clicked="btnCalcular_Clicked">
+
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
